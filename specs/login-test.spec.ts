@@ -40,12 +40,12 @@ describe('Login Tests', () => {
 	});
 
 	it('POST invalid login case senstivity', async () => {
-		const res = loginEndpoint.postInvalidLoginCaseSenstivity();
+		const res = loginEndpoint.postInvalidLoginCaseSensitivity();
 		expect((await res).statusCode).toBe(401);
 	});
 
 	it('POST invalid login malformated email', async () => {
-		const res = loginEndpoint.postInvalidLoginMalformatEmail();
+		const res = loginEndpoint.postInvalidLoginMalformedEmail();
 		expect((await res).statusCode).toBe(422);
 	});
 

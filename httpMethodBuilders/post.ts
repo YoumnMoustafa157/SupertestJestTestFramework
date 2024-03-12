@@ -10,9 +10,9 @@ export class Post {
 		queryParam?: object,
 		pathParam?: string
 	) {
-		const request = supertest('');
+		const request = supertest(baseUrl);
 		return await request
-			.post(baseUrl + endpointUrl + `${pathParam}`)
+			.post(endpointUrl + `${pathParam}`)
 			.send(payload)
 			.set(headerName, headerValue)
 			.query(queryParam);

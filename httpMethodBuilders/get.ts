@@ -10,9 +10,9 @@ export class Get {
 		queryParam?: object,
 		pathParam?: string
 	) {
-		const request = supertest('');
+		const request = supertest(baseUrl);
 		return await request
-			.get(baseUrl + endpointUrl + `${pathParam}`)
+			.get(endpointUrl + `${pathParam}`)
 			.send(payload)
 			.set(headerName, headerValue)
 			.query(queryParam);

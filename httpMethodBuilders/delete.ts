@@ -10,9 +10,9 @@ export class Delete {
 		queryParam?: object,
 		pathParam?: string
 	) {
-		const request = supertest('');
+		const request = supertest(baseUrl);
 		return await request
-			.delete(baseUrl + endpointUrl + `${pathParam}`)
+			.delete(endpointUrl + `${pathParam}`)
 			.send(payload)
 			.set(headerName, headerValue)
 			.query(queryParam);

@@ -27,7 +27,7 @@
     "email": "",
     "password": "invalidpassword"
   },
-  "invalidUserCaseSenstivity": {
+  "invalidUserCaseSensitivity": {
     "email": "Invaliduser@example.com",
     "password": "invalidpassword"
   },
@@ -35,7 +35,7 @@
     "email": " invaliduser@example.com ",
     "password": " invalidpassword "
   },
-  "invalidUserMalformatEmail": {
+  "invalidUserMalformedEmail": {
     "email": "Invaliduser#example,com",
     "password": "invalidpassword"
   }

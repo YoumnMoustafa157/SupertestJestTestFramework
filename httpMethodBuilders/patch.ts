@@ -10,9 +10,9 @@ export class Patch {
 		queryParam?: object,
 		pathParam?: string
 	) {
-		const request = supertest('');
+		const request = supertest(baseUrl);
 		return await request
-			.patch(baseUrl + endpointUrl + `${pathParam}`)
+			.patch(endpointUrl + `${pathParam}`)
 			.send(payload)
 			.set(headerName, headerValue)
 			.query(queryParam);
