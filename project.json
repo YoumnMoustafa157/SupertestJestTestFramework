@@ -1,0 +1,19 @@
+{
+  "name": "ad-server-api-tests",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/dist/.playwright/ad-servre-api-tests"],
+      "options": {
+        "jestConfig": "apps/ad-server-api-tests/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true
+        }
+      }
+    }
+  }
+}

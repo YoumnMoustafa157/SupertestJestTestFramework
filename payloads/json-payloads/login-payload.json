@@ -1,0 +1,42 @@
+{
+  "validUser": {
+    "email": "validuser@example.com",
+    "password": "validpassword"
+  },
+  "invalidUserEmailPass": {
+    "email": "invaliduser@example.com",
+    "password": "invalidpassword"
+  },
+  "invalidUserEmail": {
+    "email": "invaliduser@example.com",
+    "password": "validpassword"
+  },
+  "invalidUserPass": {
+    "email": "validuser@example.com",
+    "password": "invalidpassword"
+  },
+  "invalidUserEmptyEmailPass": {
+    "email": "",
+    "password": ""
+  },
+  "invalidUserEmptyPass": {
+    "email": "invaliduser@example.com",
+    "password": ""
+  },
+  "invalidUserEmptyEmail": {
+    "email": "",
+    "password": "invalidpassword"
+  },
+  "invalidUserCaseSenstivity": {
+    "email": "Invaliduser@example.com",
+    "password": "invalidpassword"
+  },
+  "validUserWithUntrimmedSpaceEmailPass": {
+    "email": " invaliduser@example.com ",
+    "password": " invalidpassword "
+  },
+  "invalidUserMalformatEmail": {
+    "email": "Invaliduser#example,com",
+    "password": "invalidpassword"
+  }
+}
